@@ -566,13 +566,17 @@ var QuestionService = /** @class */ (function () {
         return this.http.get(this.baseUrl);
     };
     // Delete Todo
-    QuestionService.prototype.deleteQuestion = function (todo) {
-        var url = this.baseUrl + "/" + todo.id;
+    QuestionService.prototype.deleteQuestion = function (question) {
+        var url = this.baseUrl + "/" + question.id;
         return this.http.delete(url, httpOptions);
     };
     // Add Todo
     QuestionService.prototype.addQuestion = function (question) {
         return this.http.post(this.baseUrl, question, httpOptions);
+    };
+    QuestionService.prototype.updateQuestion = function (question) {
+        var url = this.baseUrl + "/" + question.id;
+        return this.http.put(url, question, httpOptions);
     };
     QuestionService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
