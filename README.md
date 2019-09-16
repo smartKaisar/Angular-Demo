@@ -1,6 +1,4 @@
-# Angular Crash Course (TodoList)
-
-This is the code for the crash course on YouTube
+Angular Demo app for QA Spring boot : https://github.com/smartKaisar/REST-Demo
 
 ## Quick Start
 
