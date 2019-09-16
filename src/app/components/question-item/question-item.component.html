@@ -1,0 +1,12 @@
+<div class="item" (click)="onClick(question.id)">
+  <p>
+
+    <label for="{{ question.id }}">
+      {{ question.title }}
+    </label>
+    <label for="{{ question.id }}">
+      : {{ question.description }}
+    </label>
+    <button (click)="onDelete(question)" class="del">X</button>
+  </p>
+</div>
